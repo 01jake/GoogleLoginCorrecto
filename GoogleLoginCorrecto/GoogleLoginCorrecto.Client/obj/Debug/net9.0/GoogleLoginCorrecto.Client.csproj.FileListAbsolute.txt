@@ -618,6 +618,7 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\GoogleLoginCorrecto.Client.AssemblyInfo.cs
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\GoogleLoginCorrecto.Client.csproj.CoreCompileInputs.cache
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\GoogleLoginCorrecto.Client.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\GoogleLoginCorrecto.Client.sourcelink.json
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.Authorization.wasm
@@ -1036,10 +1037,10 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\refint\GoogleLoginCorrecto.Client.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\GoogleLoginCorrecto.Client.pdb
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\ref\GoogleLoginCorrecto.Client.dll
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.6r6kbrijqs.pdb
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.vad29972hu.wasm
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.vad29972hu.wasm.gz
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.6r6kbrijqs.pdb.gz
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\n7o6jl193b-vad29972hu.gz
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\qo2903q75m-6r6kbrijqs.gz
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\yhgy3kg9x3-x8gk3pb2ea.gz
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.yn07szi08w.pdb
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.suoetiyj4o.wasm
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.suoetiyj4o.wasm.gz
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\bin\Debug\net9.0\wwwroot\_framework\GoogleLoginCorrecto.Client.yn07szi08w.pdb.gz
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\n7o6jl193b-suoetiyj4o.gz
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\qo2903q75m-yn07szi08w.gz
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\compressed\yhgy3kg9x3-e5xxib2zi3.gz

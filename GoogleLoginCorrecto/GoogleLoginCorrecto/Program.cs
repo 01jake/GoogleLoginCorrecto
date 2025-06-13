@@ -2,23 +2,33 @@ using GoogleLoginCorrecto.Client.Pages;
 using GoogleLoginCorrecto.Components;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
-
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using System.Security.Claims;
+using GoogleLoginCorrecto.Services;
+using Google.Apis.Calendar.v3;
 var builder = WebApplication.CreateBuilder(args);
 
 // Servicios
+builder.Services.AddControllers();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
-builder.Services.AddCascadingAuthenticationState();
-//builder.Services.AddScoped<AuthenticationStateProvider, ServerAuthenticationStateProvider>();
-builder.Services.AddHttpContextAccessor();
-//builder.Services.AddScoped<GoogleCalendarService>();
-builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("https://localhost:7245")
+                                .AllowAnyHeader()
+                                .AllowAnyMethod();
+                      });
+});
 
-builder.Services.AddHttpClient();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -33,22 +43,21 @@ builder.Services.AddAuthentication(options =>
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always; 
     options.Cookie.SameSite = SameSiteMode.Lax;
 })
-.AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+.AddGoogleOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
 {
-    //configuraciones de Authority, ClientId, ClientSecret
+   
     options.Authority = "https://accounts.google.com";
     options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
     options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
     options.ResponseType = "code";
     options.SaveTokens = true;
 
+    options.Scope.Add(CalendarService.Scope.CalendarReadonly);
     options.Scope.Add("openid");
-    options.Scope.Add("profile"); 
-    options.Scope.Add("email");   
- 
-    // haga una llamada adicional al 'UserInfo Endpoint' de Google para obtener los datos del perfil.
-    options.GetClaimsFromUserInfoEndpoint = true;
+    options.Scope.Add("profile");
+    options.Scope.Add("email");
 
+    options.GetClaimsFromUserInfoEndpoint = true;
 
     options.ClaimActions.Clear();
     options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "sub");
@@ -59,9 +68,11 @@ builder.Services.AddAuthentication(options =>
     options.ClaimActions.MapJsonKey(ClaimTypes.Email, "email");
     options.ClaimActions.MapJsonKey("email_verified", "email_verified", ClaimValueTypes.Boolean);
 
-
     options.CallbackPath = "/signin-oidc";
 });
+
+builder.Services.AddCascadingAuthenticationState();
+builder.Services.AddScoped<GoogleCalendarService>();
 
 
 
@@ -82,7 +93,7 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

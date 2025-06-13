@@ -20,6 +20,11 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\GoogleLoginCorrecto.runtimeconfig.json
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\GoogleLoginCorrecto.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\GoogleLoginCorrecto.pdb
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Google.Apis.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Google.Apis.Auth.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Google.Apis.Auth.AspNetCore3.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Google.Apis.Calendar.v3.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Google.Apis.Core.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
@@ -53,7 +58,11 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.JSInterop.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\System.Management.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\runtimes\win\lib\net7.0\System.Management.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\GoogleLoginCorrecto.Client.dll
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\bin\Debug\net9.0\GoogleLoginCorrecto.Client.pdb
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.csproj.AssemblyReference.cache
@@ -61,7 +70,9 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.AssemblyInfoInputs.cache
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.AssemblyInfo.cs
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.csproj.CoreCompileInputs.cache
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.sourcelink.json
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\scopedcss\bundle\GoogleLoginCorrecto.styles.css
@@ -130,4 +141,4 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.pdb
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.genruntimeconfig.cache
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\ref\GoogleLoginCorrecto.dll
-C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.sourcelink.json
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\compressed\weclckynwa-uqutkq0q6f.gz

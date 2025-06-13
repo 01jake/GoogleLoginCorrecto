@@ -1,0 +1,64 @@
+﻿@inject HttpClient Http
+@inject NavigationManager NavManager
+@inject IJSRuntime JSRuntime
+@using System.Text.Json
+@if (isLoading)
+{
+    <p><em>Cargando eventos...</em></p>
+}
+else if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+else if (events == null || !events.Any())
+{
+    <p>No tienes eventos próximos.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var ev in events)
+        {
+            <li class="list-group-item">
+                <strong>@ev.Summary</strong>
+                <br />
+                <small>
+                    @if (ev.Start.HasValue)
+                    {
+                        <span>@ev.Start.Value.ToString("g")</span>
+                    }
+                    @if (ev.End.HasValue && ev.Start.HasValue && ev.End.Value.Date != ev.Start.Value.Date)
+                    {
+                        <span> - @ev.End.Value.ToString("g")</span>
+                    }
+                </small>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private SimpleEvent[]? events;
+    private bool isLoading = true;
+    private string? errorMessage;
+
+    private record SimpleEvent(string Id, string Summary, DateTimeOffset? Start, DateTimeOffset? End);
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var baseUri = NavManager.BaseUri;
+            var requestUri = new Uri(new Uri(baseUri), "api/calendar/events");
+            events = await Http.GetFromJsonAsync<SimpleEvent[]>(requestUri);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error al cargar los eventos: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

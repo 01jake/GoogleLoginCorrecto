@@ -18,5 +18,15 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "CalendarController",
+    "Method": "GetEvents",
+    "RelativePath": "api/Calendar/events",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

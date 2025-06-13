@@ -1,0 +1,23 @@
+﻿@page "/calendar"
+@inject IJSRuntime JSRuntime
+@using System.Text.Json 
+@rendermode InteractiveAuto
+@using Microsoft.AspNetCore.Components.Authorization
+@inject NavigationManager NavManager
+<PageTitle>Mi Calendario</PageTitle>
+
+<h3>Próximos Eventos del Calendario</h3>
+
+<AuthorizeView>
+    <Authorized>
+     <CalendarEvents/>
+    </Authorized>
+    <NotAuthorized>
+        <p>Por favor, <a href="signin">inicia sesi
+            ón</a> para ver tu calendario.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    
+}

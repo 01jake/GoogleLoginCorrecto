@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GoogleLoginCorrecto.Client",
   "resources": {
-    "hash": "sha256-Vh+AQnCC2gLLy1IeqhmPVy/YpvjENe0FPmU3OGIfyMY=",
+    "hash": "sha256-In0RzeJy7fxDFw5s2T2xAWeuwwOU2LLUj9qu4xB9ywc=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.phaa9r44xv.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.4o2vz6uw5j.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -203,8 +203,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "GoogleLoginCorrecto.Client.vad29972hu.wasm": "GoogleLoginCorrecto.Client.wasm",
-      "GoogleLoginCorrecto.Client.6r6kbrijqs.pdb": "GoogleLoginCorrecto.Client.pdb"
+      "GoogleLoginCorrecto.Client.suoetiyj4o.wasm": "GoogleLoginCorrecto.Client.wasm",
+      "GoogleLoginCorrecto.Client.yn07szi08w.pdb": "GoogleLoginCorrecto.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
@@ -416,10 +416,10 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "GoogleLoginCorrecto.Client.vad29972hu.wasm": "sha256-1wwHbua+dk0s02jsRB7tSi53LddE4li2apbmlAo1yz8="
+      "GoogleLoginCorrecto.Client.suoetiyj4o.wasm": "sha256-rOVb8wY7De208SS14jWVcrs+1tgLe5aKgyL9G0UhjVw="
     },
     "pdb": {
-      "GoogleLoginCorrecto.Client.6r6kbrijqs.pdb": "sha256-zomA3MAoGmS5do5rwQD4iNGbyT7EMa7bNxdnt+lQ7dQ="
+      "GoogleLoginCorrecto.Client.yn07szi08w.pdb": "sha256-HifOIzXkWMEdTgqC9YEck8oY2FsiMXoHxsE/lrPQEAQ="
     }
   },
   "cacheBootResources": true,
