@@ -1,0 +1,15 @@
+﻿@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Components.Authorization
+
+<AuthorizeView>
+    <Authorized>
+        <span>Hola, @context.User.Identity?.Name!</span>
+        <a href="signout">Cerrar Sesión</a>
+    </Authorized>
+    <NotAuthorized>
+        <a href="signin">Iniciar Sesión</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+}

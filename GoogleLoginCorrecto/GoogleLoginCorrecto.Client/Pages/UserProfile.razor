@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager Navigation
+@using System.Security.Claims
+
+<AuthorizeView>
+    <Authorizing>
+        <div class="card p-3 mb-3" style="max-width: 350px;">
+            <p>Cargando perfil...</p>
+        </div>
+    </Authorizing>
+    <Authorized>
+        @{
+            var user = context.User;
+        }
+        <div class="card p-3 mb-3" style="max-width: 350px;">
+            <h5>Perfil</h5>
+
+            <!-- claims valores -->
+            <p><strong>Nombre:</strong> @user.Identity?.Name</p>
+            <p><strong>Email:</strong> @user.FindFirst(ClaimTypes.Email)?.Value</p>
+
+            @if (user.FindFirst("picture")?.Value is string pictureUrl)
+            {
+                <img src="@pictureUrl" alt="Foto de perfil" class="img-thumbnail" width="100" />
+            }
+            <button class="btn btn-danger mt-3" @onclick="Logout">Cerrar sesión</button>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <p>Por favor, inicia sesión para ver tu perfil.</p>
+        <button class="btn btn-primary" @onclick="Login">Iniciar sesión con Google</button>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private void Login()
+    {
+        Navigation.NavigateTo("/signin", forceLoad: true);
+    }
+
+    private void Logout()
+    {
+        Navigation.NavigateTo("/signout", forceLoad: true);
+    }
+}

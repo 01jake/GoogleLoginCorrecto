@@ -1,0 +1,4 @@
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\wwwroot\appsettings.Development.json
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\wwwroot\appsettings.json
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
