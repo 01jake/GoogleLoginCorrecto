@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("d6150605-1eba-4d88-9077-ed3b54e605af")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleLoginCorrecto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09817ea0bf94cfc18c8591246d25edff375ac694")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73084ff828a5a2aaf4247aa6f05e0e7ea1109eaa")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleLoginCorrecto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleLoginCorrecto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

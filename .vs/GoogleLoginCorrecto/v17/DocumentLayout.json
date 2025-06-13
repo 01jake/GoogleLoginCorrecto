@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|solutionrelative:googlelogincorrecto\\googlelogincorrecto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|c:\\users\\jake3\\source\\repos\\googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|solutionrelative:googlelogincorrecto\\googlelogincorrecto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|c:\\users\\jake3\\source\\repos\\googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|solutionrelative:googlelogincorrecto\\googlelogincorrecto\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|c:\\users\\jake3\\source\\repos\\googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|solutionrelative:googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|c:\\users\\jake3\\source\\repos\\googlelogincorrecto\\googlelogincorrecto\\googlelogincorrecto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EFAB35B6-B5CA-481A-8F41-7754DD41D959}|GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj|solutionrelative:googlelogincorrecto\\googlelogincorrecto\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,19 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T02:26:32.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\_Imports.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\_Imports.razor",
@@ -114,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Program.cs",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Program.cs",
@@ -126,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\App.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\App.razor",
@@ -138,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\_Imports.razor",
@@ -150,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\Routes.razor",
@@ -162,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Program.cs",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Program.cs",
@@ -180,14 +168,39 @@
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\appsettings.json",
               "ToolTip": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\appsettings.json",
               "RelativeToolTip": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-12T18:30:59.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
+              "RelativeToolTip": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T18:44:03.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T02:26:32.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UserProfile.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Pages\\UserProfile.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Pages\\UserProfile.razor",
@@ -199,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Pages\\Counter.razor",
@@ -211,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ServerApiAuthenticationStateProvider.cs",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Components\\ServerApiAuthenticationStateProvider.cs",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Components\\ServerApiAuthenticationStateProvider.cs",
@@ -223,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Components\\Layout\\MainLayout.razor",
@@ -235,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LoginDisplay.razor",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Components\\Layout\\LoginDisplay.razor",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\Components\\Layout\\LoginDisplay.razor",
@@ -247,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GoogleLoginCorrecto.csproj",
               "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj",
               "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.csproj",
@@ -256,18 +269,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-06-13T02:12:08.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
-              "RelativeToolTip": "GoogleLoginCorrecto\\GoogleLoginCorrecto\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-12T18:44:03.389Z"
             }
           ]
         }

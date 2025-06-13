@@ -130,3 +130,4 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.pdb
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.genruntimeconfig.cache
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\ref\GoogleLoginCorrecto.dll
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto\obj\Debug\net9.0\GoogleLoginCorrecto.sourcelink.json

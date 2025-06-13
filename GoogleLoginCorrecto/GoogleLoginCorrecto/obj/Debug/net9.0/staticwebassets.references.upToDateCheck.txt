@@ -13,3 +13,4 @@ C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginC
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\jake3\source\repos\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\obj\Debug\net9.0\staticwebassets.build.json
