@@ -16,7 +16,6 @@
         <div class="card p-3 mb-3" style="max-width: 350px;">
             <h5>Perfil</h5>
 
-            <!-- claims valores -->
             <p><strong>Nombre:</strong> @user.Identity?.Name</p>
             <p><strong>Email:</strong> @user.FindFirst(ClaimTypes.Email)?.Value</p>
 

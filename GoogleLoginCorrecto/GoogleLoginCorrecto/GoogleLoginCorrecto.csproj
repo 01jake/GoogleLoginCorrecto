@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\GoogleLoginCorrecto.Client\Pages\Component.razor" Link="Component.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\GoogleLoginCorrecto.Client\GoogleLoginCorrecto.Client.csproj" />
     <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.70.0" />
     <PackageReference Include="Google.Apis.Calendar.v3" Version="1.69.0.3746" />

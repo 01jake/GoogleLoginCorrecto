@@ -1,0 +1,90 @@
+﻿
+@*
+    dias de la semana 5
+*@
+
+<DxSchedulerDayView DayCount="5" ShowWorkTimeOnly="true">
+    <HorizontalAppointmentTemplate>
+        <div class="card shadow-sm p-1 bg-white text-dark" style="width:100%; font-size: .925em; font-weight:600; box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            @context.Appointment.Subject
+        </div>
+    </HorizontalAppointmentTemplate>
+    <VerticalAppointmentTemplate>
+        <div class="card shadow-sm bg-white p-2" style="overflow: hidden; height: 100%;box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            <div><span class="badge mb-1 @context.Status.CssClass" style="white-space: pre-wrap;">@context.Status.Caption</span></div>
+            <span class="text-dark ps-0 mb-1" style="font-weight:600; font-size: .925em;">@context.Appointment.Subject</span>
+            <div style="height:100%; display:flex; flex-direction:column; justify-content:flex-end;">
+                <div><span class="badge bg-light text-dark" style="white-space: pre-wrap;"><span class="dx-icon-time pe-1"></span>@context.Appointment.End.ToString("MMM dd HH:mm")</span></div>
+            </div>
+        </div>
+    </VerticalAppointmentTemplate>
+</DxSchedulerDayView>
+@*
+   Semana completa 
+*@
+<DxSchedulerWeekView ShowWorkTimeOnly="true">
+    <HorizontalAppointmentTemplate>
+        <div class="card shadow-sm p-1 bg-white text-dark" style="width:100%; font-size: .925em; font-weight:600; box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            @context.Appointment.Subject
+        </div>
+    </HorizontalAppointmentTemplate>
+    <VerticalAppointmentTemplate>
+        <div class="card shadow-sm bg-white p-2" style="overflow: hidden; height: 100%;box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            <div><span class="badge mb-1 @context.Status.CssClass" style="white-space: pre-wrap;">@context.Status.Caption</span></div>
+            <span class="text-dark ps-0 mb-1" style="font-weight:600; font-size: .925em;">@context.Appointment.Subject</span>
+            <div style="height:100%; display:flex; flex-direction:column; justify-content:flex-end;">
+                <div><span class="badge bg-light text-dark" style="white-space: pre-wrap;"><span class="dx-icon-time pe-1"></span>@context.Appointment.End.ToString("MMM dd HH:mm")</span></div>
+            </div>
+        </div>
+    </VerticalAppointmentTemplate>
+</DxSchedulerWeekView>
+@*
+   5 dias de la semana que son las semanas que se puede trabajar
+*@
+<DxSchedulerWorkWeekView ShowWorkTimeOnly="true">
+    <HorizontalAppointmentTemplate>
+        <div class="card shadow-sm p-1 bg-white text-dark" style="width:100%; font-size: .925em; font-weight:600; box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            @context.Appointment.Subject
+        </div>
+    </HorizontalAppointmentTemplate>
+    <VerticalAppointmentTemplate>
+        <div class="card shadow-sm bg-white p-2" style="overflow: hidden; height: 100%;box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            <div><span class="badge mb-1 @context.Status.CssClass" style="white-space: pre-wrap;">@context.Status.Caption</span></div>
+            <span class="text-dark ps-0 mb-1" style="font-weight:600; font-size: .925em;">@context.Appointment.Subject</span>
+            <div style="height:100%; display:flex; flex-direction:column; justify-content:flex-end;">
+                <div><span class="badge bg-light text-dark" style="white-space: pre-wrap;"><span class="dx-icon-time pe-1"></span>@context.Appointment.End.ToString("MMM dd HH:mm")</span></div>
+            </div>
+        </div>
+    </VerticalAppointmentTemplate>
+</DxSchedulerWorkWeekView>
+@*
+    mes con todos los dias menos fin de semanas
+*@
+<DxSchedulerMonthView ShowWorkDaysOnly="true" MonthCount="1">
+
+    <HorizontalAppointmentTemplate>
+        <div class="card shadow-sm p-1 bg-white text-dark" style="width:100%; font-size: .925em; font-weight:600; box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            @context.Appointment.Subject
+        </div>
+    </HorizontalAppointmentTemplate>
+
+</DxSchedulerMonthView>
+@*
+    dias con horas
+*@
+<DxSchedulerTimelineView Duration="@TimeSpan.FromHours(48)" CellMinWidth="80">
+    <HorizontalAppointmentTemplate>
+        <div class="card shadow-sm p-1 bg-white text-dark" style="width:100%; font-size: .925em; font-weight:600; box-shadow: .125rem .25rem rgba(34,34,34,0.15)">
+            @context.Appointment.Subject
+        </div>
+    </HorizontalAppointmentTemplate>
+
+    <Scales>
+
+        <DxSchedulerTimeScale Unit="@SchedulerTimeScaleUnit.Day" UnitCount="1"></DxSchedulerTimeScale>
+        <DxSchedulerTimeScale Unit="@SchedulerTimeScaleUnit.Hour" UnitCount="2"></DxSchedulerTimeScale>
+    </Scales>
+</DxSchedulerTimelineView>
+@code {
+    private EventCallback<Appointment> context = new();
+}

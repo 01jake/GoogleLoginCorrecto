@@ -1,8 +1,16 @@
 {
   "mainAssemblyName": "GoogleLoginCorrecto.Client",
   "resources": {
-    "hash": "sha256-In0RzeJy7fxDFw5s2T2xAWeuwwOU2LLUj9qu4xB9ywc=",
+    "hash": "sha256-vlAbMxTgmFiSxyw+kPsEXn8ZEmiAHHaEbsPHz8wyygw=",
     "fingerprinting": {
+      "DevExpress.Blazor.v24.2.9psho58per.wasm": "DevExpress.Blazor.v24.2.wasm",
+      "DevExpress.Blazor.Resources.v24.2.tz0ce3bbn2.wasm": "DevExpress.Blazor.Resources.v24.2.wasm",
+      "DevExpress.Data.v24.2.p0w86zgshy.wasm": "DevExpress.Data.v24.2.wasm",
+      "DevExpress.Drawing.v24.2.n6yyz2epz0.wasm": "DevExpress.Drawing.v24.2.wasm",
+      "DevExpress.Pdf.v24.2.Core.86hpa2kcun.wasm": "DevExpress.Pdf.v24.2.Core.wasm",
+      "DevExpress.Pdf.v24.2.Drawing.5ochj184fy.wasm": "DevExpress.Pdf.v24.2.Drawing.wasm",
+      "DevExpress.Printing.v24.2.Core.f3i7osrxto.wasm": "DevExpress.Printing.v24.2.Core.wasm",
+      "DevExtreme.AspNet.Data.ewkcn7tfg9.wasm": "DevExtreme.AspNet.Data.wasm",
       "Microsoft.AspNetCore.Authorization.phaa9r44xv.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.4o2vz6uw5j.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Authorization.e4o7p51zuj.wasm": "Microsoft.AspNetCore.Components.Authorization.wasm",
@@ -23,10 +31,44 @@
       "Microsoft.Extensions.FileSystemGlobbing.049i7yetdr.wasm": "Microsoft.Extensions.FileSystemGlobbing.wasm",
       "Microsoft.Extensions.Logging.4of5ydne24.wasm": "Microsoft.Extensions.Logging.wasm",
       "Microsoft.Extensions.Logging.Abstractions.7bglk34tl5.wasm": "Microsoft.Extensions.Logging.Abstractions.wasm",
+      "Microsoft.Extensions.ObjectPool.hj132nsr19.wasm": "Microsoft.Extensions.ObjectPool.wasm",
       "Microsoft.Extensions.Options.bwt6p2r0a3.wasm": "Microsoft.Extensions.Options.wasm",
       "Microsoft.Extensions.Primitives.vutb1mf5cz.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.fzkuir7tme.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.igj3a20jgi.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
+      "Microsoft.Win32.SystemEvents.oolnlumynn.wasm": "Microsoft.Win32.SystemEvents.wasm",
+      "System.Drawing.Common.l257xq4hib.wasm": "System.Drawing.Common.wasm",
+      "System.Reactive.d1fws3h4o7.wasm": "System.Reactive.wasm",
+      "System.Security.Cryptography.Pkcs.71x3j8ea4m.wasm": "System.Security.Cryptography.Pkcs.wasm",
+      "System.Security.Cryptography.Xml.9xjwjsquty.wasm": "System.Security.Cryptography.Xml.wasm",
+      "System.ServiceModel.Http.ahmpoz4u88.wasm": "System.ServiceModel.Http.wasm",
+      "System.ServiceModel.Primitives.4alkxrc37a.wasm": "System.ServiceModel.Primitives.wasm",
+      "System.ServiceModel.Http.resources.gcnt2zglad.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.dek59d5x9x.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.cyn682d2yl.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.xyhxzahd9c.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.va29vhl1od.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.j9kqw6guz0.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.9lqtqpxddb.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.cf505bwqlp.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.ar4k1fm3yt.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.fs31szpfx8.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.jhxckh861p.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.db7j5rdnuj.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Http.resources.dfvmlzy11t.wasm": "System.ServiceModel.Http.resources.wasm",
+      "System.ServiceModel.Primitives.resources.crm96p4ele.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.zkyfq9l875.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.nfgx3c3k0e.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.zf4lfb0hxk.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.vgq8mgqxmo.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.vsi14or3lx.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.qr63tifm0r.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.e59rthsdjw.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.g2zqg62i4z.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.3lolg08n1b.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.yoxfblr7jt.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.hq1c4eytqu.wasm": "System.ServiceModel.Primitives.resources.wasm",
+      "System.ServiceModel.Primitives.resources.bnprlzmt0b.wasm": "System.ServiceModel.Primitives.resources.wasm",
       "Microsoft.CSharp.rtelzgo5qn.wasm": "Microsoft.CSharp.wasm",
       "Microsoft.VisualBasic.Core.rov4p20cgi.wasm": "Microsoft.VisualBasic.Core.wasm",
       "Microsoft.VisualBasic.yffsxgg1pj.wasm": "Microsoft.VisualBasic.wasm",
@@ -203,8 +245,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "GoogleLoginCorrecto.Client.suoetiyj4o.wasm": "GoogleLoginCorrecto.Client.wasm",
-      "GoogleLoginCorrecto.Client.yn07szi08w.pdb": "GoogleLoginCorrecto.Client.pdb"
+      "GoogleLoginCorrecto.Client.b2tvmmnfuw.wasm": "GoogleLoginCorrecto.Client.wasm",
+      "GoogleLoginCorrecto.Client.qihch33odw.pdb": "GoogleLoginCorrecto.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
@@ -225,6 +267,14 @@
       "System.Private.CoreLib.wejp19zmu1.wasm": "sha256-iEPGi1OS5IQuHAewjUSiRdMd3+Xdkmlu0NIN8J253Vc="
     },
     "assembly": {
+      "DevExpress.Blazor.v24.2.9psho58per.wasm": "sha256-c0jAoj6ro7LOYcB6NZsTRIy4OICUGQ29YnmTExbKVEQ=",
+      "DevExpress.Blazor.Resources.v24.2.tz0ce3bbn2.wasm": "sha256-CbowMYdlh0kus9KY3sH3oCQ0cEFkrOGt39MPgjDjzEY=",
+      "DevExpress.Data.v24.2.p0w86zgshy.wasm": "sha256-GYYdzVYUdc52wOaeb1TyMVZxbv8dBRRoiypi3jAZhxw=",
+      "DevExpress.Drawing.v24.2.n6yyz2epz0.wasm": "sha256-j0zpsrnyNPkbsqC2PqnXFYacMzo7PI/AdTPr2F+3208=",
+      "DevExpress.Pdf.v24.2.Core.86hpa2kcun.wasm": "sha256-0ApWns1ezgDB/w80umOtkcl4HPA+PxG1yr47mCcJBCI=",
+      "DevExpress.Pdf.v24.2.Drawing.5ochj184fy.wasm": "sha256-m4654paACgv8/PnXGnYhRtMYCJGVnehdyCH3HHK2SPA=",
+      "DevExpress.Printing.v24.2.Core.f3i7osrxto.wasm": "sha256-pbD/RUng6z7+ZAGC51uEb5inyNns1YFXDhuzSB1KyVE=",
+      "DevExtreme.AspNet.Data.ewkcn7tfg9.wasm": "sha256-zndPXiqW5SdShkUefnPiNBgP6GQC4c5uCZfaXxJxqCI=",
       "Microsoft.AspNetCore.Authorization.phaa9r44xv.wasm": "sha256-Y3fgwAJNQ1yRlUO/TmUUh+77TdIqc7iddqjEvPR8SYc=",
       "Microsoft.AspNetCore.Components.4o2vz6uw5j.wasm": "sha256-RNrz85tP7WgWpdvE1eS/GYK4a13HlP+M2vUrcuUQ7gE=",
       "Microsoft.AspNetCore.Components.Authorization.e4o7p51zuj.wasm": "sha256-Is0INxKycKqn3hPegbYnXqjoXe6K/YRMAonXIjsndMc=",
@@ -245,10 +295,18 @@
       "Microsoft.Extensions.FileSystemGlobbing.049i7yetdr.wasm": "sha256-oE1z3wcWKdg/Sv9uzgvHRZ0YH/yTfZy+yW4VzP9UCZA=",
       "Microsoft.Extensions.Logging.4of5ydne24.wasm": "sha256-lISZ2evbuKBWFb8LlXP3CMikApVVFJqf5TPtJx78eoY=",
       "Microsoft.Extensions.Logging.Abstractions.7bglk34tl5.wasm": "sha256-LbqNFiczB9qwkZqoo1ig7ySL187gUWgMKNc4Lt/3ll8=",
+      "Microsoft.Extensions.ObjectPool.hj132nsr19.wasm": "sha256-jag1KQeKszsRSkSx/17z0ygzbIExnD9efpqiiuMGyMs=",
       "Microsoft.Extensions.Options.bwt6p2r0a3.wasm": "sha256-240HONkBeTMj+px7kStA4wZzCAbBgKM14lDROyv0JRQ=",
       "Microsoft.Extensions.Primitives.vutb1mf5cz.wasm": "sha256-51T9UQfKfLlYCAQqg2dm09LSlyXkc7FI7tpU8c6D9c8=",
       "Microsoft.JSInterop.fzkuir7tme.wasm": "sha256-uxPnAz9kpk5BUd/EcsRdGT34myycGV2+kmtVuYQjFaQ=",
       "Microsoft.JSInterop.WebAssembly.igj3a20jgi.wasm": "sha256-vihRWdXryu7DS4JnQ9L0vQJYUdWnw355a300nvjPHZc=",
+      "Microsoft.Win32.SystemEvents.oolnlumynn.wasm": "sha256-iBoNrwV9ZVNxtWI/O2q7cu04spIcBga+bLNabjvz3Vg=",
+      "System.Drawing.Common.l257xq4hib.wasm": "sha256-kwG8Cr7e1cHTYXVeZ5euQFTFdsKuZ58ks8dworW0C+E=",
+      "System.Reactive.d1fws3h4o7.wasm": "sha256-31OeEDYnGVfsT/mJsAJjs59Yt6lUXKNj/D/K1z09tf4=",
+      "System.Security.Cryptography.Pkcs.71x3j8ea4m.wasm": "sha256-+zwMb/5gF/oM+U0k/lHsnzsIcU5y53QRPRDvfVjCPg4=",
+      "System.Security.Cryptography.Xml.9xjwjsquty.wasm": "sha256-3S/wVZoArz5RwpaySb290YmU8X5NDDzu7ESGlL5Deoo=",
+      "System.ServiceModel.Http.ahmpoz4u88.wasm": "sha256-DoLd+lenBKEUVYnb3Sei4VjYG1U6tH82KDPIKgt5Zno=",
+      "System.ServiceModel.Primitives.4alkxrc37a.wasm": "sha256-vDVaQIw+5K0aFnvgvE20QTsKB344vUcFRs746RgR2VE=",
       "Microsoft.CSharp.rtelzgo5qn.wasm": "sha256-sb4OTrzpJjaX/xq3MPBJBmS9JkiQz9azllgFrhhU/bw=",
       "Microsoft.VisualBasic.Core.rov4p20cgi.wasm": "sha256-a3rs6Kmp+m12xUnYhoc07m3D9/0TM6zemU7jCmU0WwA=",
       "Microsoft.VisualBasic.yffsxgg1pj.wasm": "sha256-0oH/gAOr4hHKmXwali402ylm77D5GapsgQRn/Am7RTs=",
@@ -416,10 +474,64 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "GoogleLoginCorrecto.Client.suoetiyj4o.wasm": "sha256-rOVb8wY7De208SS14jWVcrs+1tgLe5aKgyL9G0UhjVw="
+      "GoogleLoginCorrecto.Client.b2tvmmnfuw.wasm": "sha256-48KyKu5Yh4VvqyGtFuymtj9NwZ5B83HP9suWRbxOJyE="
     },
     "pdb": {
-      "GoogleLoginCorrecto.Client.yn07szi08w.pdb": "sha256-HifOIzXkWMEdTgqC9YEck8oY2FsiMXoHxsE/lrPQEAQ="
+      "GoogleLoginCorrecto.Client.qihch33odw.pdb": "sha256-Tk+TLxjAYoiSA9TqcqfCzkLDaemjo1i6e279CMeZ4q4="
+    },
+    "satelliteResources": {
+      "cs": {
+        "System.ServiceModel.Http.resources.gcnt2zglad.wasm": "sha256-kPZI5XNApZ7KIAscK+70jyW4E73GExG7C58AtOuIVP4=",
+        "System.ServiceModel.Primitives.resources.crm96p4ele.wasm": "sha256-iJrEXr5kN+HPc4eaUTvajvjSgS0NnEfHGZMq1TgwrVA="
+      },
+      "de": {
+        "System.ServiceModel.Http.resources.dek59d5x9x.wasm": "sha256-e3wcvp157EWh6qm7cRfxUDmj3dpJxJpfljMw26Wt+vc=",
+        "System.ServiceModel.Primitives.resources.zkyfq9l875.wasm": "sha256-LTXhYcv3XozLQtocvSR6WpNDNtGl2rChUbhVtQooO9I="
+      },
+      "es": {
+        "System.ServiceModel.Http.resources.cyn682d2yl.wasm": "sha256-PKECRsMozb2E5X4uumA9q3y6ZPG/o0cEzQb7q5hQsbo=",
+        "System.ServiceModel.Primitives.resources.nfgx3c3k0e.wasm": "sha256-c5T2JpAgIxJ7x/0d/bIRYRAkL97XVSSP4Xb0fF346GY="
+      },
+      "fr": {
+        "System.ServiceModel.Http.resources.xyhxzahd9c.wasm": "sha256-OZRlIzEUUz4S6Mpp3WsVm24SX5Lx5WTllX7V6gliqRg=",
+        "System.ServiceModel.Primitives.resources.zf4lfb0hxk.wasm": "sha256-QTsInmZZSKn2Gm+iKKKNK5svTn3OSJBe+8E4+fk0bcQ="
+      },
+      "it": {
+        "System.ServiceModel.Http.resources.va29vhl1od.wasm": "sha256-52bMLgJq2koaV3wKwP0mW0hMRzwFcrpMWp7SSH6Kgz4=",
+        "System.ServiceModel.Primitives.resources.vgq8mgqxmo.wasm": "sha256-/y0IwoGRC4JZmzh16RihfoQsZS2jaE38g9Tun7tAKS8="
+      },
+      "ja": {
+        "System.ServiceModel.Http.resources.j9kqw6guz0.wasm": "sha256-F2HWSO3UeL5+jhY5NOOS8LY6iAvc2E19kx2CnayTKF8=",
+        "System.ServiceModel.Primitives.resources.vsi14or3lx.wasm": "sha256-kZb+eO0ZF0XGyl8uUrvJQkp/qkouAsRL0Rqn7dbatZY="
+      },
+      "ko": {
+        "System.ServiceModel.Http.resources.9lqtqpxddb.wasm": "sha256-IyaTjSYhKI6hHOZ+xSlpMdk32KASUvIHKidOXlvJUqU=",
+        "System.ServiceModel.Primitives.resources.qr63tifm0r.wasm": "sha256-+oWPoRh/ZhKysuvoMcVkxn+CORzNjqWQutBNXflf45I="
+      },
+      "pl": {
+        "System.ServiceModel.Http.resources.cf505bwqlp.wasm": "sha256-iDPNbrfdJ3b//X2Uxr1rIaUL0vbre2uPfRO9DabA76c=",
+        "System.ServiceModel.Primitives.resources.e59rthsdjw.wasm": "sha256-7ncu0AQa1UmPESk1tZkd1RqqrrIn7HAj7XrZ9zy37E8="
+      },
+      "pt-BR": {
+        "System.ServiceModel.Http.resources.ar4k1fm3yt.wasm": "sha256-6k0MZDPCRFXoH2OdxZ5sIW2XumdnxYtIE6ytxGkfLaM=",
+        "System.ServiceModel.Primitives.resources.g2zqg62i4z.wasm": "sha256-CLw7cgkJ3hFK6DPs6SpynEI9kJzY/cK3hgrFdtR4ZXk="
+      },
+      "ru": {
+        "System.ServiceModel.Http.resources.fs31szpfx8.wasm": "sha256-kd5NwGgPaaDQgDJ4cqPXXGsfl0ezVowVQRopfwgUAz8=",
+        "System.ServiceModel.Primitives.resources.3lolg08n1b.wasm": "sha256-t7/mnhKQ50sGPcUgbzUlK4D+NtxSGqJ4+zKAAuVczzY="
+      },
+      "tr": {
+        "System.ServiceModel.Http.resources.jhxckh861p.wasm": "sha256-eVM+idrw0GeI07OmA3XtVgGUyRt9lINw4Zh21T2iXFE=",
+        "System.ServiceModel.Primitives.resources.yoxfblr7jt.wasm": "sha256-rtjpYVjQcl7MWL31bT0VsFQTueIG3jcU+TvqIqFTChI="
+      },
+      "zh-Hans": {
+        "System.ServiceModel.Http.resources.db7j5rdnuj.wasm": "sha256-N1MdCul7Lz6ZKHK7o0NoEhVG/2GdNyYFlRso04cAKpE=",
+        "System.ServiceModel.Primitives.resources.hq1c4eytqu.wasm": "sha256-yW9jIkettKdM3YnW75dH7ciYOCHhWu5m+fMjFuyA4U0="
+      },
+      "zh-Hant": {
+        "System.ServiceModel.Http.resources.dfvmlzy11t.wasm": "sha256-mUnSvuGdW/wnJv2FMW3e0Ifbbrb9W9FJCDoUK0iLdMU=",
+        "System.ServiceModel.Primitives.resources.bnprlzmt0b.wasm": "sha256-aQRZZnxm3aPxAXk0mSSGpR4meIq65mZl9kT3EAKv4kY="
+      }
     }
   },
   "cacheBootResources": true,

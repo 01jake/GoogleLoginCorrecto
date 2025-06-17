@@ -1,48 +1,35 @@
 ﻿@inject HttpClient Http
 @inject NavigationManager NavManager
-@inject IJSRuntime JSRuntime
-@using System.Text.Json
+@using GoogleLoginCorrecto.Client;
+
+
+
 @if (isLoading)
 {
-    <p><em>Cargando eventos...</em></p>
+    <p><em>Cargando calendario...</em></p>
 }
 else if (!string.IsNullOrEmpty(errorMessage))
 {
     <div class="alert alert-danger">@errorMessage</div>
 }
-else if (events == null || !events.Any())
-{
-    <p>No tienes eventos próximos.</p>
-}
 else
 {
-    <ul class="list-group">
-        @foreach (var ev in events)
-        {
-            <li class="list-group-item">
-                <strong>@ev.Summary</strong>
-                <br />
-                <small>
-                    @if (ev.Start.HasValue)
-                    {
-                        <span>@ev.Start.Value.ToString("g")</span>
-                    }
-                    @if (ev.End.HasValue && ev.Start.HasValue && ev.End.Value.Date != ev.Start.Value.Date)
-                    {
-                        <span> - @ev.End.Value.ToString("g")</span>
-                    }
-                </small>
-            </li>
-        }
-    </ul>
+
+    <DxScheduler @bind-StartDate="@StartDate" DataStorage="@DataStorage" CssClass="w-100 h-100">
+        <Views>
+            <ComponenteCalendario />
+        </Views>
+    </DxScheduler>
 }
 
 @code {
-    private SimpleEvent[]? events;
     private bool isLoading = true;
     private string? errorMessage;
 
-    private record SimpleEvent(string Id, string Summary, DateTimeOffset? Start, DateTimeOffset? End);
+    private DateTime StartDate { get; set; } = DateTime.Today;
+    private DxSchedulerDataStorage DataStorage { get; set; } = new DxSchedulerDataStorage();
+
+    private record GoogleApiEvent(string Id, string Summary, DateTimeOffset? Start, DateTimeOffset? End);
 
     protected override async Task OnInitializedAsync()
     {
@@ -50,8 +37,47 @@ else
         {
             var baseUri = NavManager.BaseUri;
             var requestUri = new Uri(new Uri(baseUri), "api/calendar/events");
-            events = await Http.GetFromJsonAsync<SimpleEvent[]>(requestUri);
+            var googleEvents = await Http.GetFromJsonAsync<GoogleApiEvent[]>(requestUri);
+
+            if (googleEvents != null)
+            {
+                var appointments = googleEvents.Select(e => new Appointment
+                    {
+                        GoogleEventId = e.Id,
+                        Subject = e.Summary,
+                        StartDate = e.Start?.DateTime ?? DateTime.Today,
+                        EndDate = e.End?.DateTime ?? e.Start?.DateTime.AddHours(1) ?? DateTime.Today.AddHours(1),
+                        AllDay = e.Start.HasValue && e.End.HasValue && e.Start.Value.TimeOfDay == TimeSpan.Zero && (e.End.Value.Date - e.Start.Value.Date).Days == 1,
+                        LabelId = 1,
+                        StatusId = 1,
+                        Description = "Evento de Google Calendar",
+
+                    }).ToList();
+
+                DataStorage = new DxSchedulerDataStorage()
+                    {
+                        AppointmentsSource = appointments,
+                        AppointmentMappings = new DxSchedulerAppointmentMappings()
+                        {
+                            Start = nameof(Appointment.StartDate),
+                            End = nameof(Appointment.EndDate),
+                            Subject = nameof(Appointment.Subject),
+                            AllDay = nameof(Appointment.AllDay),
+                            LabelId = nameof(Appointment.LabelId),
+                            StatusId = nameof(Appointment.StatusId),
+                            Description = nameof(Appointment.Description),
+                            Id = nameof(Appointment.GoogleEventId)
+                        }
+                    };
+            }
+            else
+            {
+                errorMessage = "No se encontraron eventos en el calendario.";
+            }
+
         }
+
+
         catch (Exception ex)
         {
             errorMessage = $"Error al cargar los eventos: {ex.Message}";
@@ -60,5 +86,9 @@ else
         {
             isLoading = false;
         }
+        StartDate = DateTime.Today;
+        StateHasChanged();
+
     }
+
 }

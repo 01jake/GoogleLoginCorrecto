@@ -16,8 +16,12 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\9.0.6\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.webassembly.authentication\9.0.6\buildTransitive\Microsoft.AspNetCore.Components.WebAssembly.Authentication.props')" />
+    <Import Project="C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor.themes\24.2.6\buildTransitive\DevExpress.Blazor.Themes.props" Condition="Exists('C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor.themes\24.2.6\buildTransitive\DevExpress.Blazor.Themes.props')" />
+    <Import Project="C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor.resources\24.2.6\buildTransitive\DevExpress.Blazor.Resources.props" Condition="Exists('C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor.resources\24.2.6\buildTransitive\DevExpress.Blazor.Resources.props')" />
+    <Import Project="C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor\24.2.6\buildTransitive\net5.0\DevExpress.Blazor.props" Condition="Exists('C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.blazor\24.2.6\buildTransitive\net5.0\DevExpress.Blazor.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\jake3\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\9.0.4</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+    <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Program Files\DevExpress 24.2\Components\Offline Packages\devexpress.data\24.2.6</PkgDevExpress_Data>
   </PropertyGroup>
 </Project>

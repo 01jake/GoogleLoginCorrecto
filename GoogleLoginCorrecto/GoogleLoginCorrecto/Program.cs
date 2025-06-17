@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using System.Security.Claims;
 using GoogleLoginCorrecto.Services;
 using Google.Apis.Calendar.v3;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using DevExpress.Blazor;
 var builder = WebApplication.CreateBuilder(args);
 
 // Servicios
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddHttpClient();
+builder.Services.AddDevExpressBlazor();
 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
@@ -52,7 +55,7 @@ builder.Services.AddAuthentication(options =>
     options.ResponseType = "code";
     options.SaveTokens = true;
 
-    options.Scope.Add(CalendarService.Scope.CalendarReadonly);
+    options.Scope.Add(CalendarService.Scope.Calendar);
     options.Scope.Add("openid");
     options.Scope.Add("profile");
     options.Scope.Add("email");

@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GoogleLoginCorrecto.nfr1a00e0j.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5985"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 17:16:05 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5985"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 21:25:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GoogleLoginCorrecto/GoogleLoginCorrecto.nfr1a00e0j.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\GoogleLoginCorrecto.nfr1a00e0j.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nfr1a00e0j"},{"Name":"integrity","Value":"sha256-3fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q="},{"Name":"label","Value":"_content/GoogleLoginCorrecto/GoogleLoginCorrecto.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5985"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 17:16:05 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5985"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223fRae6VNlgHaf9Wj14c0TDQuL8K7debhX8UQY4T2v3Q=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Jun 2025 21:25:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/GoogleLoginCorrecto/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
