@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleLoginCorrecto.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dfe5be06499c95edc51679d1b80eec5bf7c81b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2200411ab0e6d6d2308f49184a45c4edf51561a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleLoginCorrecto.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleLoginCorrecto.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

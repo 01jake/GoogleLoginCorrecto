@@ -31,11 +31,12 @@ public class GoogleCalendarService
         });
 
         var request = calendarService.Events.List("primary");
-        request.TimeMin = DateTime.Now;
+        var today = DateTime.Now;
+        request.TimeMinDateTimeOffset = new DateTime(today.Year, today.Month, 1);
+
         request.ShowDeleted = false;
         request.SingleEvents = true;
-        request.MaxResults = maxResults;
-
+        request.MaxResults = 250;
         request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
 
         Events events = await request.ExecuteAsync();
@@ -55,30 +56,27 @@ public class GoogleCalendarService
             ApplicationName = "GoogleLoginCorrecto"
         });
 
-        // Creamos el nuevo objeto de evento de Google
+    
         var newEvent = new Event()
         {
             Summary = summary,
             Description = description,
             Start = new EventDateTime()
             {
-                // Es importante especificar la zona horaria.
-               
-                DateTimeDateTimeOffset = new DateTimeOffset(startTime, TimeSpan.Zero).ToUniversalTime(),
-                TimeZone = "UTC" // O puedes intentar obtener la del usuario
+              
+            
+                // La API de Google prefiere este formato.
+                DateTime = startTime.ToUniversalTime()
             },
             End = new EventDateTime()
             {
-                DateTimeDateTimeOffset = new DateTimeOffset(endTime, TimeSpan.Zero).ToUniversalTime(),
-                TimeZone = "UTC"
+                // Hacemos lo mismo para la fecha de fin.
+                DateTime = endTime.ToUniversalTime()
             }
-          
         };
 
-        // Creamos la petición de inserción
         var request = calendarService.Events.Insert(newEvent, "primary");
 
-        // Ejecutamos la petición y devolvemos el evento creado 
         Event createdEvent = await request.ExecuteAsync();
         return createdEvent;
     }

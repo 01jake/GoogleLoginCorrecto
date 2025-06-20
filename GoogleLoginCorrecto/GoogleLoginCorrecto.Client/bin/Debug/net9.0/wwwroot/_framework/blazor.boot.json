@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "GoogleLoginCorrecto.Client",
   "resources": {
-    "hash": "sha256-vlAbMxTgmFiSxyw+kPsEXn8ZEmiAHHaEbsPHz8wyygw=",
+    "hash": "sha256-O+ZwgPTZysiN42oQ3NsUvtrGtJjSVr2EECbQ6Ytutm0=",
     "fingerprinting": {
       "DevExpress.Blazor.v24.2.9psho58per.wasm": "DevExpress.Blazor.v24.2.wasm",
       "DevExpress.Blazor.Resources.v24.2.tz0ce3bbn2.wasm": "DevExpress.Blazor.Resources.v24.2.wasm",
@@ -239,23 +239,23 @@
       "netstandard.d82br99ghv.wasm": "netstandard.wasm",
       "System.Private.CoreLib.wejp19zmu1.wasm": "System.Private.CoreLib.wasm",
       "dotnet.js": "dotnet.js",
-      "dotnet.native.hvg7u8bimp.js": "dotnet.native.js",
-      "dotnet.native.3c4wvb350q.wasm": "dotnet.native.wasm",
-      "dotnet.runtime.cymp1amu5g.js": "dotnet.runtime.js",
+      "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
+      "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
+      "dotnet.runtime.d1pzlaz2ez.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "GoogleLoginCorrecto.Client.b2tvmmnfuw.wasm": "GoogleLoginCorrecto.Client.wasm",
-      "GoogleLoginCorrecto.Client.qihch33odw.pdb": "GoogleLoginCorrecto.Client.pdb"
+      "GoogleLoginCorrecto.Client.xyywjf3cse.wasm": "GoogleLoginCorrecto.Client.wasm",
+      "GoogleLoginCorrecto.Client.aclnv4a8xv.pdb": "GoogleLoginCorrecto.Client.pdb"
     },
     "jsModuleNative": {
-      "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
+      "dotnet.native.rtblh4npr3.js": "sha256-HyBzcYNpT2l19+f1bpjNOa1oFoLe3K4JIQ6GsFK5m6I="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.cymp1amu5g.js": "sha256-dCmS9Zx4egtLYSUgTI3R6gMS+Yg8MkzxW1CgEMJKAEw="
+      "dotnet.runtime.d1pzlaz2ez.js": "sha256-gbZjXNFbH7V8lcix+H0TUDJHLeFUA3n3IMu7fLh4D80="
     },
     "wasmNative": {
-      "dotnet.native.3c4wvb350q.wasm": "sha256-89jyB8DlCnV2BPMV477jOe1Sm0WXwVf8RuoSPsj4Ym8="
+      "dotnet.native.aqhezbunpl.wasm": "sha256-QgAJsJSEDZ9XA0g3PW3EffgXg+ymMp2uRhGnkVsOxQY="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -474,10 +474,10 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "GoogleLoginCorrecto.Client.b2tvmmnfuw.wasm": "sha256-48KyKu5Yh4VvqyGtFuymtj9NwZ5B83HP9suWRbxOJyE="
+      "GoogleLoginCorrecto.Client.xyywjf3cse.wasm": "sha256-98cVg4vxq6SkzNZtrRiC/88YOS4cuNcUCAosgh5A8JQ="
     },
     "pdb": {
-      "GoogleLoginCorrecto.Client.qihch33odw.pdb": "sha256-Tk+TLxjAYoiSA9TqcqfCzkLDaemjo1i6e279CMeZ4q4="
+      "GoogleLoginCorrecto.Client.aclnv4a8xv.pdb": "sha256-NoXUs3jy9/vIPdYBDLR2FjNbsbzPYmeMw6pm1xrH6Vo="
     },
     "satelliteResources": {
       "cs": {

@@ -1,0 +1,78 @@
+﻿<div class="card mb-4">
+    <div class="card-header">
+        Crear Nuevo Evento
+    </div>
+    <div class="card-body">
+        <div class="mb-2">
+            <label class="form-label">Título:</label>
+            <input @bind="summary" class="form-control" placeholder="Añadir un título" />
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Descripción:</label>
+            <input @bind="description" class="form-control" placeholder="Añadir una descripción" />
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label">Inicio:</label>
+                <input type="datetime-local" @bind="startTime" class="form-control" />
+            </div>
+            <div class="col">
+                <label class="form-label">Fin:</label>
+                <input type="datetime-local" @bind="endTime" class="form-control" />
+            </div>
+        </div>
+        <button class="btn btn-primary" @onclick="CreateEventClicked" disabled="@IsBusy">
+            @if (IsBusy)
+            {
+                <span class="spinner-border spinner-border-sm"></span>
+            }
+            Crear Evento
+        </button>
+        @if (!string.IsNullOrEmpty(ErrorMessage))
+        {
+            <div class="alert alert-danger mt-2">@ErrorMessage</div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public bool IsBusy { get; set; }
+    [Parameter] public string? ErrorMessage { get; set; }
+    [Parameter] public EventCallback<NewEventRequest> OnCreate { get; set; }
+
+    private string summary = "";
+    private string description = "";
+    private DateTime startTime = DateTime.Now;
+    private DateTime endTime = DateTime.Now.AddHours(1);
+
+    private async Task CreateEventClicked()
+    {
+     
+        var newEvent = new NewEventRequest
+        {
+            Summary = this.summary,
+            Description = this.description,
+            StartTime = this.startTime,
+            EndTime = this.endTime
+        };
+        await OnCreate.InvokeAsync(newEvent);
+
+        
+        if (string.IsNullOrEmpty(ErrorMessage))
+        {
+            summary = "";
+            description = "";
+            startTime = DateTime.Now;
+            endTime = DateTime.Now.AddHours(1);
+        }
+    }
+
+   
+    public class NewEventRequest
+    {
+        public string Summary { get; set; } = "";
+        public string Description { get; set; } = "";
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+    }
+}

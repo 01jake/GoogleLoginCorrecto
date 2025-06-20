@@ -1,94 +1,166 @@
-﻿@inject HttpClient Http
-@inject NavigationManager NavManager
-@using GoogleLoginCorrecto.Client;
+﻿@inject HttpClient Http  
+@inject NavigationManager NavManager  
+@using GoogleLoginCorrecto.Client;  
 
-
-
-@if (isLoading)
+@if (isLoading)  
 {
-    <p><em>Cargando calendario...</em></p>
-}
-else if (!string.IsNullOrEmpty(errorMessage))
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+}  
+else if (!string.IsNullOrEmpty(errorMessage))  
+{  
+    <div class="alert alert-danger">@errorMessage</div>  
+}  
+else  
 {
-    <div class="alert alert-danger">@errorMessage</div>
-}
-else
-{
+    <div id="dropdown-customization-target-container">
+        <DxButton Click="() => IsOpen = !IsOpen"
+                  RenderStyle="@ButtonRenderStyle.Secondary"
+                  aria-describedby="dropDown-customization">Crear Evento</DxButton>
+    </div>
+    <DxDropDown @bind-IsOpen="@IsOpen"
+                MinWidth="max(25vw, 250px)"
+                PositionMode="DropDownPositionMode.Bottom"
+                PositionTarget="#dropdown-customization-target-container"
+                RestrictionTarget="#Navigation-DropDown-Customization"
+                CloseMode="DropDownCloseMode.Close"
+                PreventCloseOnPositionTargetClick="true">
+        <BotonNuevo IsBusy="isCreating" ErrorMessage="@createErrorMessage" OnCreate="HandleCreateEvent" />
+    </DxDropDown>
 
-    <DxScheduler @bind-StartDate="@StartDate" DataStorage="@DataStorage" CssClass="w-100 h-100">
-        <Views>
-            <ComponenteCalendario />
-        </Views>
-    </DxScheduler>
-}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <DxCalendar T="DateTime" VisibleDate="@DateTime.Today" CssClass="demo-calendar" />
+            </div>
+            <div class="col">
+                <DxScheduler @ref="Scheduler" @bind-StartDate="@StartDate" DataStorage="@DataStorage" CssClass="w-100 h-100" VirtualScrollingEnabled="true">
+
+            <Views>
+                <ComponenteCalendario />
+            </Views>
+
+            <AppointmentFormHeaderTemplate Context="context">
+                @if (context is SchedulerAppointmentFormInfo appointmentInfo)
+                {
+                    var caption = string.IsNullOrEmpty(appointmentInfo.Subject) ? "Nueva Cita" : appointmentInfo.Subject;
+                    <div class="popup-text-header">@caption</div>
+                }
+
+                <DxSchedulerSaveAppointmentChangesButton />
+                <DxSchedulerDeleteAppointmentButton />
+                <DxSchedulerDiscardAppointmentChangesButton />
+            </AppointmentFormHeaderTemplate>
+        </DxScheduler>
+            </div>
+        </div>
+    </div>
+   
+}  
 
 @code {
-    private bool isLoading = true;
-    private string? errorMessage;
+    private DxScheduler? Scheduler { get; set; }
+    private bool isLoading = true;  
+    private bool isCreating = false;
+    private string? createErrorMessage;
+    bool IsOpen { get; set; } = false;
+    private string? errorMessage;  
+    private DateTime StartDate { get; set; } = DateTime.Today;  
+    private List<Appointment> Appointments { get; set; } = new List<Appointment>();  
+    private DxSchedulerDataStorage DataStorage { get; set; } = new DxSchedulerDataStorage();  
 
-    private DateTime StartDate { get; set; } = DateTime.Today;
-    private DxSchedulerDataStorage DataStorage { get; set; } = new DxSchedulerDataStorage();
+    private record GoogleApiEvent(string Id, string Summary, DateTimeOffset? Start, DateTimeOffset? End);  
 
-    private record GoogleApiEvent(string Id, string Summary, DateTimeOffset? Start, DateTimeOffset? End);
+    protected override async Task OnInitializedAsync()  
+    {  
+        try  
+        {  
+            var baseUri = NavManager.BaseUri;  
+            var requestUri = new Uri(new Uri(baseUri), "api/calendar/events");  
+            var googleEvents = await Http.GetFromJsonAsync<GoogleApiEvent[]>(requestUri);  
 
-    protected override async Task OnInitializedAsync()
+            if (googleEvents != null)  
+            {  
+                var appointments = googleEvents.Select(e => new Appointment  
+                    {  
+                        GoogleEventId = e.Id,  
+                        Subject = e.Summary,  
+                        StartDate = e.Start?.DateTime ?? DateTime.Today,  
+                        EndDate = e.End?.DateTime ?? e.Start?.DateTime.AddHours(1) ?? DateTime.Today.AddHours(1),  
+                        AllDay = e.Start.HasValue && e.End.HasValue && e.Start.Value.TimeOfDay == TimeSpan.Zero && (e.End.Value.Date - e.Start.Value.Date).Days == 1,  
+                        LabelId = 1,  
+                        StatusId = 1,  
+                        Description = "Evento de Google Calendar",  
+
+                    }).ToList();  
+
+                DataStorage = new DxSchedulerDataStorage()  
+                    {  
+                        AppointmentsSource = appointments,  
+                        AppointmentMappings = new DxSchedulerAppointmentMappings()  
+                        {  
+                            Start = nameof(Appointment.StartDate),  
+                            End = nameof(Appointment.EndDate),  
+                            Subject = nameof(Appointment.Subject),  
+                            AllDay = nameof(Appointment.AllDay),  
+                            LabelId = nameof(Appointment.LabelId),  
+                            StatusId = nameof(Appointment.StatusId),  
+                            Description = nameof(Appointment.Description),  
+                            Id = nameof(Appointment.GoogleEventId)  
+                        }  
+                    };  
+            }  
+            else  
+            {  
+                errorMessage = "No se encontraron eventos en el calendario.";  
+            }  
+
+        }  
+        catch (Exception ex)  
+        {  
+            errorMessage = $"Error al cargar los eventos: {ex.Message}";  
+        }  
+        finally  
+        {  
+            isLoading = false;  
+        }  
+        StartDate = DateTime.Today;  
+        StateHasChanged();  
+    }  
+
+    private async Task HandleCreateEvent(BotonNuevo.NewEventRequest newEventFromForm)
     {
+        isCreating = true;
+        createErrorMessage = null;
+        StateHasChanged(); 
+
         try
         {
             var baseUri = NavManager.BaseUri;
             var requestUri = new Uri(new Uri(baseUri), "api/calendar/events");
-            var googleEvents = await Http.GetFromJsonAsync<GoogleApiEvent[]>(requestUri);
 
-            if (googleEvents != null)
+            var response = await Http.PostAsJsonAsync(requestUri, newEventFromForm);
+
+            if (response.IsSuccessStatusCode)
             {
-                var appointments = googleEvents.Select(e => new Appointment
-                    {
-                        GoogleEventId = e.Id,
-                        Subject = e.Summary,
-                        StartDate = e.Start?.DateTime ?? DateTime.Today,
-                        EndDate = e.End?.DateTime ?? e.Start?.DateTime.AddHours(1) ?? DateTime.Today.AddHours(1),
-                        AllDay = e.Start.HasValue && e.End.HasValue && e.Start.Value.TimeOfDay == TimeSpan.Zero && (e.End.Value.Date - e.Start.Value.Date).Days == 1,
-                        LabelId = 1,
-                        StatusId = 1,
-                        Description = "Evento de Google Calendar",
-
-                    }).ToList();
-
-                DataStorage = new DxSchedulerDataStorage()
-                    {
-                        AppointmentsSource = appointments,
-                        AppointmentMappings = new DxSchedulerAppointmentMappings()
-                        {
-                            Start = nameof(Appointment.StartDate),
-                            End = nameof(Appointment.EndDate),
-                            Subject = nameof(Appointment.Subject),
-                            AllDay = nameof(Appointment.AllDay),
-                            LabelId = nameof(Appointment.LabelId),
-                            StatusId = nameof(Appointment.StatusId),
-                            Description = nameof(Appointment.Description),
-                            Id = nameof(Appointment.GoogleEventId)
-                        }
-                    };
+              
+                await OnInitializedAsync();
             }
             else
             {
-                errorMessage = "No se encontraron eventos en el calendario.";
+                createErrorMessage = $"Error: {await response.Content.ReadAsStringAsync()}";
             }
-
         }
-
-
         catch (Exception ex)
         {
-            errorMessage = $"Error al cargar los eventos: {ex.Message}";
+            createErrorMessage = $"Error de red: {ex.Message}";
         }
         finally
         {
-            isLoading = false;
+            isCreating = false;
+            StateHasChanged(); 
         }
-        StartDate = DateTime.Today;
-        StateHasChanged();
-
     }
 
 }

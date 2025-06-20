@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj": {}
+    "C:\\Users\\ang31\\OneDrive\\Desktop\\practicas\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj": {
+    "C:\\Users\\ang31\\OneDrive\\Desktop\\practicas\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj",
+        "projectUniqueName": "C:\\Users\\ang31\\OneDrive\\Desktop\\practicas\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj",
         "projectName": "GoogleLoginCorrecto.Client",
-        "projectPath": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj",
-        "packagesPath": "C:\\Users\\jake3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jake3\\source\\repos\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\obj\\",
+        "projectPath": "C:\\Users\\ang31\\OneDrive\\Desktop\\practicas\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\GoogleLoginCorrecto.Client.csproj",
+        "packagesPath": "C:\\Users\\ang31\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ang31\\OneDrive\\Desktop\\practicas\\GoogleLoginCorrecto\\GoogleLoginCorrecto\\GoogleLoginCorrecto.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jake3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ang31\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -29,7 +29,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,7 +47,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -69,13 +68,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[9.0.6, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.4, )",
+              "version": "[9.0.6, )",
               "autoReferenced": true
             }
           },
@@ -90,12 +89,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[9.0.6, 9.0.6]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
