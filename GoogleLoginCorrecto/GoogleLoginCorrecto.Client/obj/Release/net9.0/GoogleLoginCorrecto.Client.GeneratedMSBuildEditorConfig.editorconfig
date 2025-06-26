@@ -13,41 +13,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = GoogleLoginCorrecto.Client
 build_property.RootNamespace = GoogleLoginCorrecto.Client
-build_property.ProjectDir = C:\Users\ang31\OneDrive\Desktop\practicas\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\
+build_property.ProjectDir = C:\Users\jake3\OneDrive\Desktop\practicas\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ang31\OneDrive\Desktop\practicas\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client
+build_property.MSBuildProjectDirectory = C:\Users\jake3\OneDrive\Desktop\practicas\GoogleLoginCorrecto\GoogleLoginCorrecto\GoogleLoginCorrecto.Client
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Components/ComponenteCalendario.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Components/BotonNuevo.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCb3Rvbk51ZXZvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Components/ComponenteCalendario.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRlQ2FsZW5kYXJpby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Components/Layout/LoginDisplay.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Components/Layout/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5EaXNwbGF5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/CalendarEvents.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/CalendarEvents.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXJFdmVudHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/Calendario.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/Calendario.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXJpby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/Counter.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/UserProfile.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/Pages/UserProfile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclByb2ZpbGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ang31/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/_Imports.razor]
+[C:/Users/jake3/OneDrive/Desktop/practicas/GoogleLoginCorrecto/GoogleLoginCorrecto/GoogleLoginCorrecto.Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
